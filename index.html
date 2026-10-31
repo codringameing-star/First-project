@@ -1,83 +1,162 @@
 <!DOCTYPE html>
 <html lang="ro">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Primul HTML</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Site-ul personal al lui Codrin — pasiune pentru automobilele Porsche, design și performanță.">
+  <title>Codrin — Porsche Passion</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<section class="hero">
-    <div class="container">
-        <h1>Salut , sunt Codrin!</h1>
-    </div>
-    <section>
-</body>
-<body>
-<section class="about">
-    <div class="container">
-        <h2> Despre porsche </h2>
-    </div>
- <section>
-<body>
-<section class="proiect si contact">
-    <div class="container">
-        <h3> </h3>
-    </div>
- <section>
-        <section class="footer">
-      <div class="footer-row">
-        <div class="footer-col">
-          <h4>Info</h4>
-          <ul class="links">
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Compressions</a></li>
-            <li><a href="#">Customers</a></li>
-            <li><a href="#">Service</a></li>
-            <li><a href="#">Collection</a></li>
-          </ul>
+  <header class="site-header">
+    <a class="brand" href="#acasa" aria-label="Codrin, pagina principală">
+      <span class="brand-mark">C.</span>
+      <span>CODRIN<span class="brand-dot">.</span></span>
+    </a>
+
+    <button class="menu-toggle" aria-label="Deschide meniul" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+
+    <nav class="main-nav" aria-label="Navigare principală">
+      <a href="#acasa">Acasă</a>
+      <a href="#despre">Despre mine</a>
+      <a href="#modele">Modele preferate</a>
+      <a href="#pasiune">Pasiunea mea</a>
+    </nav>
+    <a class="header-cta" href="#contact">Hai să vorbim <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero" id="acasa">
+      <div class="hero-image"></div>
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <p class="eyebrow"><span></span> AUTOMOTIVE ENTHUSIAST</p>
+        <h1>Mai mult decât<br>o mașină. <em>O pasiune.</em></h1>
+        <p class="hero-copy">Sunt Codrin, iar pentru mine Porsche înseamnă design atemporal, inginerie și emoția fiecărei călătorii.</p>
+        <div class="hero-actions">
+          <a class="button button-light" href="#despre">Descoperă povestea <span>↘</span></a>
+          <a class="text-link" href="#modele">Explorează modelele <span>↗</span></a>
         </div>
-        <div class="footer-col">
-          <h4>Explore</h4>
-          <ul class="links">
-            <li><a href="#">Free Designs</a></li>
-            <li><a href="#">Latest Designs</a></li>
-            <li><a href="#">Themes</a></li>
-            <li><a href="#">Popular Designs</a></li>
-            <li><a href="#">Art Skills</a></li>
-            <li><a href="#">New Uploads</a></li>
-          </ul>
+      </div>
+      <div class="hero-bottom">
+        <span>PERSONAL WEBSITE / 2026</span>
+        <span class="scroll-note">SCROLL TO EXPLORE <b>↓</b></span>
+        <span>BUILT AROUND PASSION</span>
+      </div>
+    </section>
+
+    <section class="intro section-wrap" id="despre">
+      <div class="section-label"><span>01</span> / DESPRE MINE</div>
+      <div class="intro-grid">
+        <div>
+          <p class="overline">BINE AI VENIT ÎN LUMEA MEA</p>
+          <h2>Salut, sunt<br><span>Codrin.</span></h2>
         </div>
-        <div class="footer-col">
-          <h4>Legal</h4>
-          <ul class="links">
-            <li><a href="#">Customer Agreement</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">GDPR</a></li>
-            <li><a href="#">Security</a></li>
-            <li><a href="#">Testimonials</a></li>
-            <li><a href="#">Media Kit</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Newsletter</h4>
-          <p>
-            Subscribe to our newsletter for a weekly dose
-            of news, updates, helpful tips, and
-            exclusive offers.
-          </p>
-          <form action="#">
-            <input type="text" placeholder="Your email" required>
-            <button type="submit">SUBSCRIBE</button>
-          </form>
-          <div class="icons">
-            <i class="fa-brands fa-facebook-f"></i>
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-linkedin"></i>
-            <i class="fa-brands fa-github"></i>
-          </div>
+        <div class="intro-text">
+          <p class="lead">Sunt pasionat de automobile, iar Porsche ocupă un loc special în această pasiune.</p>
+          <p>Îmi place felul în care un Porsche îmbină liniile elegante cu performanța și atenția pentru detalii. De la modelele clasice care au scris istorie până la cele moderne, fiecare generație are ceva aparte.</p>
+          <p>Acest site este locul în care împărtășesc câteva dintre lucrurile care mă inspiră în universul Porsche.</p>
+          <a class="underlined-link" href="#pasiune">Află ce mă atrage la Porsche <span>↗</span></a>
         </div>
       </div>
     </section>
+
+    <section class="models-section" id="modele">
+      <div class="section-wrap">
+        <div class="section-heading">
+          <div>
+            <div class="section-label"><span>02</span> / GARAGE INSPIRATION</div>
+            <h2>Modele care<br><em>mă inspiră.</em></h2>
+          </div>
+          <p>Fiecare model are propria personalitate. Acestea sunt câteva dintre mașinile care fac universul Porsche atât de special pentru mine.</p>
+        </div>
+
+        <div class="model-grid">
+          <article class="model-card model-wide">
+            <div class="model-photo photo-911"></div>
+            <div class="model-info"><span>ICONIC / SPORTS CAR</span><h3>911 Carrera</h3><p>Un design recognoscibil și o poveste care continuă de generații.</p></div>
+            <span class="model-number">01</span>
+          </article>
+          <article class="model-card">
+            <div class="model-photo photo-gt3"></div>
+            <div class="model-info"><span>TRACK INSPIRED</span><h3>911 GT3</h3><p>Spirit de circuit și inginerie dusă la un alt nivel.</p></div>
+            <span class="model-number">02</span>
+          </article>
+          <article class="model-card">
+            <div class="model-photo photo-classic"></div>
+            <div class="model-info"><span>TIMELESS CLASSIC</span><h3>Classic 911</h3><p>Farmecul unei legende care nu se demodează.</p></div>
+            <span class="model-number">03</span>
+          </article>
+        </div>
+        <p class="disclaimer">Imaginile sunt folosite cu rol ilustrativ. Porsche este o marcă înregistrată a Dr. Ing. h.c. F. Porsche AG.</p>
+      </div>
+    </section>
+
+    <section class="passion section-wrap" id="pasiune">
+      <div class="passion-visual">
+        <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1400&q=85" alt="Automobil sport Porsche într-un cadru exterior">
+        <div class="image-caption">THE ART OF DRIVING <span>— 911</span></div>
+      </div>
+      <div class="passion-copy">
+        <div class="section-label"><span>03</span> / DE CE PORSCHE?</div>
+        <h2>Design cu<br>personalitate.<br><em>Performanță cu sens.</em></h2>
+        <p>Nu este vorba doar despre cifre sau viteză. Mă atrage echilibrul dintre formă și funcție, sunetul, istoria și modul în care fiecare detaliu contribuie la experiența completă.</p>
+        <div class="values">
+          <div><b>01</b><span>Design iconic</span></div>
+          <div><b>02</b><span>Inginerie germană</span></div>
+          <div><b>03</b><span>Istorie și evoluție</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="quote-section">
+      <p class="overline">A PERSONAL POINT OF VIEW</p>
+      <blockquote>„Pasiunea pentru automobile începe cu un design care îți atrage privirea și continuă cu povestea din spatele lui.”</blockquote>
+      <span>— CODRIN</span>
+    </section>
+
+    <section class="contact section-wrap" id="contact">
+      <div>
+        <div class="section-label"><span>04</span> / CONTACT</div>
+        <h2>Ai aceeași<br><em>pasiune?</em></h2>
+      </div>
+      <div class="contact-right">
+        <p>Îmi place să descopăr oameni care apreciază automobilele, designul și poveștile din spatele lor.</p>
+        <a class="button button-dark" href="mailto:hello@example.com">Scrie-mi un mesaj <span>↗</span></a>
+        <small>Înlocuiește hello@example.com cu adresa ta de e-mail.</small>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="brand footer-brand" href="#acasa"><span class="brand-mark">C.</span><span>CODRIN<span class="brand-dot">.</span></span></a>
+    <p>PERSONAL WEBSITE · MADE WITH PASSION</p>
+    <a href="#acasa" class="back-top">ÎNAPOI SUS ↑</a>
+    <div class="footer-bottom"><span>© 2026 CODRIN. TOATE DREPTURILE REZERVATE.</span><span>NOT AN OFFICIAL PORSCHE WEBSITE.</span></div>
+  </footer>
+
+  <script>
+    const menuButton = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.main-nav');
+
+    menuButton.addEventListener('click', () => {
+      const isOpen = nav.classList.toggle('is-open');
+      menuButton.classList.toggle('is-open', isOpen);
+      menuButton.setAttribute('aria-expanded', String(isOpen));
+    });
+
+    nav.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        nav.classList.remove('is-open');
+        menuButton.classList.remove('is-open');
+        menuButton.setAttribute('aria-expanded', 'false');
+      });
+    });
+  </script>
 </body>
 </html>
