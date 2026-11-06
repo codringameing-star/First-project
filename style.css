@@ -66,8 +66,13 @@ a { color: inherit; text-decoration: none; }
 .model-wide .model-photo { height: 410px; }
 .model-card:hover .model-photo { filter: saturate(1.1); }
 .photo-911 { background-image: url("https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1600&q=85"); background-position: center 57%; }
-.photo-gt3 { background-image: url("https://unsplash.com/photos/a-red-porsche-911-gt3-rs-on-display-Kp-WMcT-WvI?utm_source=chatgpt.com"); }
-.photo-classic { background-image: url("https://unsplash.com/photos/a-bright-yellow-vintage-porsche-bAyBBrSbohg?utm_source=chatgpt.com"); }
+.photo-gt3 { background-image: url("https://commons.wikimedia.org/wiki/Special:FilePath/2021_Porsche_911_GT3.jpg");
+  background-position: center;
+  background-size: cover;}
+.photo-classic { background-image: url("https://commons.wikimedia.org/wiki/Special:FilePath/Yellow_Porsche_911_Classic_coupe.jpg");
+  background-position: center;
+  background-size: cover;
+}
 .model-info { padding-top: 20px; }
 .model-info > span { color: #a6c66a; font-size: 9px; letter-spacing: .16em; font-weight: 700; }
 .model-info h3 { font: 600 25px "Manrope", sans-serif; margin: 8px 0; }
@@ -155,4 +160,11 @@ a { color: inherit; text-decoration: none; }
 }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; transition-duration: .01ms !important; }
+}
+
+.model-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
